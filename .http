@@ -1,0 +1,26 @@
+###
+GET http://localhost:4141
+###
+GET http://localhost:4141/movies 
+###
+POST http://localhost:4141/movies
+Content-Type: application/json
+
+{
+    "title": "love your self",
+    "rating": 5.3,
+    "year": "2021",
+    "director": "Michael Timberlack",
+    "studio": "RCTI"
+}
+###
+GET http://localhost:4141/movies/6
+###
+PUT  http://localhost:4141/movies/9
+Content-Type: application/json
+
+{
+    "title": "Kuku Bima"
+}
+###
+DELETE  http://localhost:4141/movies/7
